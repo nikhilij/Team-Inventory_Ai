@@ -1,10 +1,8 @@
-# agents/demand_forecasting_agent.py
-
+import os
 import pandas as pd
 from prophet import Prophet
 from sklearn.linear_model import LinearRegression
 import joblib
-import os
 
 class DemandForecastingAgent:
     def __init__(self, data_path='data/demand_forecasting.csv', model_path='models/demand_model.pkl'):
@@ -23,6 +21,8 @@ class DemandForecastingAgent:
         model.fit(df)
         self.model = model
         if save:
+            # Ensure the directory exists
+            os.makedirs(os.path.dirname(self.model_path), exist_ok=True)
             joblib.dump(model, self.model_path)
 
     def load_model(self):

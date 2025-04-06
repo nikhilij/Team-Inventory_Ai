@@ -1,4 +1,4 @@
-# 🧠 Multi-Agent AI System for Retail Inventory Optimization
+source# 🧠 Multi-Agent AI System for Retail Inventory Optimization
 
 A modular, intelligent system that leverages multiple AI agents to collaboratively solve core retail challenges: demand forecasting, inventory monitoring, pricing optimization, and supplier coordination. The goal is to maintain stock availability, reduce holding costs, and boost supply chain efficiency.
 

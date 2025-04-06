@@ -14,7 +14,7 @@ class CoordinatorAgent:
 
     def run_all_agents(self):
         print("\n--- Demand Forecasting ---")
-        forecast = self.demand_agent.forecast_demand()
+        forecast = self.demand_agent.forecast()  # Corrected method call
         print(forecast.head())
 
         print("\n--- Inventory Monitoring ---")
