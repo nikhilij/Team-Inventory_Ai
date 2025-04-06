@@ -30,12 +30,12 @@ A central Coordinator Agent oversees data flow and decision synchronization betw
 - SupplierAgent: Processes restocking requests and updates delivery status.
 - CoordinatorAgent: Central controller managing agent communication and operation cycles.
 
-🔭 Interaction Flow:
+🔍 Interaction Flow:
 forecast → check inventory → reorder if needed → adjust price → update system
 
 ---
 
-## 🛠️ Technologies Used
+## ⚙️ Technologies Used
 
 🧠 AI/ML
 - scikit-learn, XGBoost, Facebook Prophet
@@ -86,19 +86,26 @@ project/
    pip install -r requirements.txt
    ```
 
-2. Run the system:
+2. Create and activate virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # for Linux/macOS
+   # .\venv\Scripts\activate  # for Windows
+   ```
+
+3. Run the system:
    ```bash
    python main.py
    ```
 
-3. (Optional) Launch the dashboard:
+4. (Optional) Launch the dashboard:
    ```bash
    streamlit run dashboard.py
    ```
 
 ---
 
-## 📈 Sample Output
+## 📊 Sample Output
 
 Example forecast:
 ```
@@ -126,7 +133,7 @@ New Price Suggested → ₹29.99
 - Mesa Agent Modeling: https://mesa.readthedocs.io/  
 - scikit-learn: https://scikit-learn.org/
 
-📊 Industry Case Studies  
+📈 Industry Case Studies  
 - Walmart AI Supply Chain – [Forbes](https://www.forbes.com/sites/shelleykohan/2022/03/28/walmarts-supply-chain-uses-ai/)  
 - Amazon Dynamic Pricing – [Harvard Business Review](https://hbr.org/2020/06/how-amazon-innovates-in-ways-that-google-and-apple-cant)  
 - McKinsey Retail AI Insights – [McKinsey](https://www.mckinsey.com/industries/retail/our-insights)

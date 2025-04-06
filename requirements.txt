@@ -1,0 +1,22 @@
+# Core Data Processing
+pandas
+numpy
+
+# Machine Learning & Forecasting
+scikit-learn
+xgboost
+prophet
+
+# Visualization (optional)
+matplotlib
+seaborn
+
+# Utility
+joblib
+python-dateutil
+
+# For Web App Dashboard (optional)
+streamlit
+
+# For Agent Communication (optional messaging framework)
+paho-mqtt   # If using MQTT
