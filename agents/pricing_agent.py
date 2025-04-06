@@ -2,9 +2,13 @@
 
 import pandas as pd
 
+import os
+
 class PricingOptimizationAgent:
     def __init__(self, pricing_path='data/pricing_optimization.csv'):
         self.pricing_path = pricing_path
+        if not os.path.exists(pricing_path):
+            raise FileNotFoundError(f"Pricing file not found: {pricing_path}")
         self.pricing_df = pd.read_csv(pricing_path)
 
     def identify_discount_opportunities(self):

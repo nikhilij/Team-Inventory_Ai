@@ -12,9 +12,9 @@ df_inventory = pd.read_csv("data/inventory_monitoring.csv")
 df_pricing = pd.read_csv("data/pricing_optimization.csv")
 
 # Initialize Agents
-demand_agent = DemandForecastingAgent(df_demand)
-inventory_agent = InventoryMonitoringAgent(df_inventory)
-pricing_agent = PricingOptimizationAgent(df_pricing)
+demand_agent = DemandForecastingAgent("data/demand_forecasting.csv")
+inventory_agent = InventoryMonitoringAgent("data/inventory_monitoring.csv")
+pricing_agent = PricingOptimizationAgent("data/pricing_optimization.csv")
 coordinator = CoordinatorAgent(demand_agent, inventory_agent, pricing_agent)
 
 # Streamlit UI
