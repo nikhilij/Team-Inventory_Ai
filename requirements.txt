@@ -44,7 +44,6 @@ seaborn==0.13.2
 six==1.17.0
 smmap==5.0.2
 stanio==0.5.1
-streamlit==1.44.1
 tenacity==9.1.2
 threadpoolctl==3.6.0
 toml==0.10.2
